@@ -1,0 +1,47 @@
+{
+  "ModelName": "Developing on DyamoDB Course 1",
+  "ModelMetadata": {
+    "Author": "AWS ",
+    "DateCreated": "Dec 20, 2020, 06:37 AM",
+    "DateLastModified": "Dec 20, 2020, 06:52 AM",
+    "Description": "Data model to support Developing on DynamoDB Course 1.",
+    "AWSService": "Amazon DynamoDB",
+    "Version": "2.0"
+  },
+  "DataModel": [
+    {
+      "TableName": "Movies",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "year",
+          "AttributeType": "N"
+        },
+        "SortKey": {
+          "AttributeName": "title",
+          "AttributeType": "S"
+        }
+      },
+      "DataAccess": {
+        "MySql": {}
+      },
+      "TableData": [
+        {
+          "year": {
+            "N": "1990"
+          },
+          "title": {
+            "S": "Example 1"
+          }
+        },
+        {
+          "year": {
+            "N": "1990"
+          },
+          "title": {
+            "S": "Example 2"
+          }
+        }
+      ]
+    }
+  ]
+}
